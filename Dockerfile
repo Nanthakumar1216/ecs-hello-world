@@ -1,7 +1,7 @@
-FROM amazonlinux
-MAINTAINER Brian G. Shacklett
+FROM Ubuntu:20.04
+MAINTAINER NanthaKumar N
 
-RUN yum -y update && yum -y install nginx
+RUN apt -y update && apt -y install nginx
 
 ADD html /var/www/html/
 
